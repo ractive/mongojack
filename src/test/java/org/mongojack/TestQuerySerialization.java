@@ -90,6 +90,7 @@ public class TestQuerySerialization extends MongoDBTestBase {
         collection.save(o);
         assertThat(collection.find(DBQuery.is("simpleList", "a")).toArray(), hasSize(1));
     }
+    
 
    
     @Test
